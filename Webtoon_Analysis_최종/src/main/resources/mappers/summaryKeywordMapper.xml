@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.webtoon.mapper.summaryKeywordMapper">
+
+	<select id="selectSummaryKeyword" resultType="summaryKeywordVO">
+		SELECT title,episode,summary_keyword1,summary_keyword2,summary_keyword3,summary_keyword4,
+		summary_keyword5,summary_keyword6,summary_keyword7,summary_keyword8,
+		summary_keyword9,summary_keyword10 FROM summary_keywords
+	</select>
+    
+</mapper>

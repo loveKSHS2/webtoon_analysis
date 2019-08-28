@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.webtoon.mapper.keywordMapper">
+	<select id="selectKeyword" resultType="keywordVO">
+		SELECT title,episode,word,frequency,
+		related_word1,
+		related_word2,
+		related_word3,
+		related_word4,
+		related_word5,
+		related_word6,
+		related_word7,
+		related_word8,
+		related_word9,
+		related_word10,sep FROM keywords
+	</select>
+    
+</mapper>
