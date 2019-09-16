@@ -101,7 +101,7 @@ def comment_more(soup):
 
     # 댓글 페이지 넘기면서 크롤링
     try:
-        while True:
+        for _ in range (1,601):     # 메모리 에러 방지, 600페이지(댓글 약 9000개)까지 크롤링 
             next_xpath = '//*[@id="cbox_module"]/div/div[7]/div/a['+str(cnt)+']'
             btn_next = driver.find_element_by_xpath(next_xpath)
             btn_next.click()
