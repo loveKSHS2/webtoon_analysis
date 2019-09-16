@@ -1,5 +1,3 @@
-# 회차 범위 직접 정해서 크롤링, 정식 웹툰만 가능
-
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.common import exceptions
